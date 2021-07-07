@@ -95,4 +95,74 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testFeetTall() {
+        // Given
+        Person person = new Person();
+        Integer expected = 6;
+
+        // When
+        person.setFeetTall(expected);
+
+        // Then
+        Integer actual = person.getFeetTall();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testNumOfToes() {
+        // Given
+        Person person = new Person();
+        Integer expected = 12;
+
+        // When
+        person.setNumOfToes(expected);
+
+        // Then
+        Integer actual = person.getNumOfToes();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testNumOfEars() {
+        // Given
+        Person person = new Person();
+        Integer expected = 2;
+
+        // When
+        person.setNumOfEars(expected);
+
+        // Then
+        Integer actual = person.getNumOfEars();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testFingernails() {
+        // Given
+        Person person = new Person();
+        Integer expected = 9;
+
+        // When
+        person.setFingernails(expected);
+
+        // Then
+        Integer actual = person.getFingernails();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testScars() {
+        // Given
+        Person person = new Person();
+        Integer expected = 16;
+
+        // When
+        person.setScars(expected);
+
+        // Then
+        Integer actual = person.getScars();
+        Assert.assertEquals(expected, actual);
+    }
 }
